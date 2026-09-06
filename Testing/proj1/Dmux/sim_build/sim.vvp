@@ -1,0 +1,34 @@
+#! /opt/homebrew/Cellar/icarus-verilog/13.0/bin/vvp
+:ivl_version "13.0 (stable)" "(v13_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/va_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/13.0/lib/ivl/v2009.vpi";
+S_0x10327ea80 .scope package, "$unit" "$unit" 2 1;
+ .timescale -9 -12;
+S_0x103282000 .scope module, "dmux" "dmux" 3 1;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "din";
+    .port_info 1 /INPUT 1 "sel";
+    .port_info 2 /OUTPUT 1 "a";
+    .port_info 3 /OUTPUT 1 "b";
+o0x70bc000d0 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x1032829c0 .functor NOT 1, o0x70bc000d0, C4<0>, C4<0>, C4<0>;
+o0x70bc00070 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x103282a30 .functor AND 1, o0x70bc00070, L_0x1032829c0, C4<1>, C4<1>;
+L_0x103282ae0 .functor AND 1, o0x70bc00070, o0x70bc000d0, C4<1>, C4<1>;
+v0x103282180_0 .net "a", 0 0, L_0x103282a30;  1 drivers
+v0x1032826f0_0 .net "b", 0 0, L_0x103282ae0;  1 drivers
+v0x1032827a0_0 .net "din", 0 0, o0x70bc00070;  0 drivers
+v0x103282840_0 .net "n0", 0 0, L_0x1032829c0;  1 drivers
+v0x1032828e0_0 .net "sel", 0 0, o0x70bc000d0;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "/Volumes/Projects/Nand2Tetris/Testing/01/Dmux/dmux.sv";
