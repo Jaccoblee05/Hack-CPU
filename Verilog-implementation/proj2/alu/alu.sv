@@ -1,7 +1,7 @@
 `include "../add16.sv"
 `include "../inc16.sv"
-`include "/Volumes/Projects/Nand2Tetris/Testing/proj1/not16/not16.sv"
-`include "/Volumes/Projects/Nand2Tetris/Testing/proj1/And16/and16.sv"
+`include "/Volumes/Projects/Nand2Tetris/Verilog-implementation/proj1/not16/not16.sv"
+`include "/Volumes/Projects/Nand2Tetris/Verilog-implementation/proj1/And16/and16.sv"
 
 
 module alu(
