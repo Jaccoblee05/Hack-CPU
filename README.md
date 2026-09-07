@@ -3,7 +3,7 @@
 A complete SystemVerilog implementation of the 16-bit Hack architecture, designed for high-performance hardware description and functional verification. This project follows the standard "Hack" architecture (from the Nand2Tetris project) while utilizing modern SystemVerilog features for modularity and clarity.
 
 ## 🚀 Project Overview
-This repository contains a modular hardware design of a 16-bit CPU. It features a RISC-like instruction set, a dedicated ALU, and a split memory architecture (Instruction vs. Data). The design is fully synthesizable and optimized for deployment on FPGA hardware.
+This repository contains a modular hardware design of a 16-bit CPU. It features a RISC-like instruction set, a dedicated ALU, and a split memory architecture (Instruction vs. Data). The design is intended to be fully synthesizable and optimized for deployment on FPGA hardware.
 
 ## 🏗 Architecture Highlights
 - **16-bit ALU**: Supports 18 distinct operations including logic (AND, OR, XOR, NOT), arithmetic (Add, Sub, Bitwise Shift), and comparison.
