@@ -15,6 +15,8 @@ This repository contains a modular hardware design of a 16-bit CPU. It features 
 
 ## ⚙️ Simulation & Verification
 
+More info soon
+
 ## 🚀 FPGA Implementation
 
 Coming Soon
