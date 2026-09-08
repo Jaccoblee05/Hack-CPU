@@ -1,4 +1,4 @@
-`include "../Mux4-1-16bit/mux16b4.sv"
+`include "../mux16b4.sv"
 
 module mux16b8(
     input[15:0] a, b, c, d, e, f, g, h,

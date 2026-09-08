@@ -1,4 +1,4 @@
-`include "../mux/mux.sv"
+`include "../mux.sv"
 
 
 module mux16(

@@ -1,4 +1,4 @@
-`include "../Dmux4-1/dmux4.sv"
+`include "../dmux4.sv"
 
 module dmux8(
     input din,

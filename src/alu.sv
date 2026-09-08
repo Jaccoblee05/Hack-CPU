@@ -1,8 +1,8 @@
-`include "../0-gates/Or16/or16.sv"
-`include "../0-gates/Mux8-1-16bit/mux16b8.sv"
-`include "../0-gates/not16/not16.sv"
-`include "../0-gates/And16/and16.sv"
-`include "../0-gates/add16.sv"
+`include "../src/0-gates/or16.sv"
+`include "../src/0-gates/mux16b8.sv"
+`include "../src/0-gates/not16.sv"
+`include "../src/0-gates/and16.sv"
+`include "../src/0-gates/add16.sv"
 module alu(
 input[15:0] x, y,
 input zx, nx, zy, ny, f, no,
